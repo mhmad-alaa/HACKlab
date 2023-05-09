@@ -22,10 +22,6 @@ DECLARE @variable_name datatype
 SET @name = "human", 
     @id = 2
 -- or from table vlaues
-set @EmpId = (select id from emp where id=20)
--- note that set allows only query returns one value, 
--- if it returned more it will be fail, unlike select 
--- which take the last value in this case
 select @EmpId = id from emp where dept_id=1
 ```
 
@@ -67,3 +63,16 @@ select * from @mytable
 --- 
 
 ## **Global**
+``` sql server
+starts with @@
+example: @@id, @@name
+```
+
+Declared and set values with
+``` sql server
+select [global_variable] as [value]
+```
+
+--- 
+## **Loops and conditional statements**
+

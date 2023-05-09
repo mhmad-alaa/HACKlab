@@ -67,7 +67,16 @@ select empId, name from EMPLOYEE where dept = 'Sales'
 
 
 ### **Global**
+Everything about Global variables is that it's declared and assigned with values as in this example 
 
+``` sql server
+SELECT @@LANGUAGE as 'Engilsh'
+print @@LANGUAGE
+```
+
+
+
+### **Loops and Conditional statments**
 
 
 
