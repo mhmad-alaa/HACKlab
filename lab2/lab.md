@@ -1,5 +1,5 @@
 Create database and insert values
-```sql
+```sql server
 CREATE TABLE EMPLOYEE (
   empId int,
   name varchar(100),
@@ -12,8 +12,33 @@ INSERT INTO EMPLOYEE(empId,name,dept) VALUES (0002, 'Dave', 'Accounting');
 INSERT INTO EMPLOYEE(empId,name,dept) VALUES (0003, 'Ava', 'Sales');
 ```
 
+Declare a local variables without intialization
+``` sql server
+DECLARE @name VARCHAR(50), 
+    @id INT;
+```
 
+Declare a local variable and intialize it
+``` sql server
+DECLARE @dept_name VARCHAR(50) = 'computer and systems'
+```
 
+Set value to declared variables above using **set** statment
+``` sql server
+set @name = "mhmad-alaa"
+set @id = 22
+set @dept_name = "cse"
+set @dept_name = "cce"
+```
+
+Display the variables, what is the output!
+``` sql server
+print @name             -- mhmad-alaa
+print @id               -- 22
+print @dept_name        -- cce
+```
+
+:bell:
 
 
 

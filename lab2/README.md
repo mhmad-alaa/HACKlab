@@ -7,13 +7,13 @@ There are two types of variables
 ```
 ---
 ## **Local**
-```sql
+```sql server
 starts with @
 example: @id, @name
 ```
 
 ### Declared as
-```sql 
+```sql server
 DECLARE @variable_name datatype
 ```
 
