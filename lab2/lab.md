@@ -38,8 +38,13 @@ print @id               -- 22
 print @dept_name        -- cce
 ```
 
-:bell:
-
+:warning:
+ Important Note
+ ``` md
+  local variables are just variables 
+  its not affect table anyway or conflict with it 
+  its just a variable carry data
+ ``` 
 
 
 
