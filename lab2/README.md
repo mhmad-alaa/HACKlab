@@ -95,8 +95,8 @@ How while loop work in sql server!
             -- do work
         END
 ```
-:warning:
-``` sql 
+:warning: Alert
+```md
 BEGIN, END 
 just a scope statments which specifiy the scode you are working in.
 ```
