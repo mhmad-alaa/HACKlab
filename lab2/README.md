@@ -27,7 +27,7 @@ select @EmpId = id from emp where dept_id=1
 
 It's shown that we use **set** and **select** to assign values to variables, what is the differnece
 <div align="center">
-<img src="/media/malaa/HDD Files/colleage/third/sec_term/dbase/dblab/docs/set_select.png" width="500">
+<img src="/docs/set_select.png" width="500">
 </div>
 <div align="center">
 <img src="/docs/set_select_2.png" width="500">
