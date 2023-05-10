@@ -1,3 +1,6 @@
+[Execution Link in online sql server editor](https://onecompiler.com/sqlserver/3z83jg7cn)
+
+---
 Create database and insert values
 ```sql server
 CREATE TABLE EMPLOYEE (
@@ -78,8 +81,70 @@ print @@LANGUAGE
 
 ### **Loops and Conditional statments**
 
+If-else 
+``` sql server
+BEGIN 
+if (@id < 22) 
+  print "ok it works";
+else if (@id != 22)
+  print "bruh take a rest";
+else if (@id + 2 = 24)
+  print "for what all of that!";
+END;
 
+```
+While
+``` sql server
+while (@id <= 27) 
+BEGIN
+    set @id = @id + 1
+    
+    if (@id = 24) print @id
+    else if (@id = 25) 
+      BREAK; 
+END
+```
 
+Delete all records starting from id = 1 to id =2
+``` sql server
+DECLARE @iterator int = 1
 
+while (@iterator between 1 and 2) 
+  BEGIN 
+  -- specifiy the table and the action you want to do work
+    Delete from EMPLOYEE  
+    where empId = @iterator -- where / selcection statment
+    
+    set @iterator = @iterator + 1  -- increase counter 
+  END
+```
 
-[Execution Link](https://onecompiler.com/sqlserver/3z83jg7cn)
+Update all the id's of the EMPLOYEE table with 1000, and stop when the max is less than 5000
+
+``` sql server
+while ((SELECT max(empId) from EMPLOYEE) < 20) 
+  BEGIN
+  -- these two lines update all the records of the table mantionned
+    update EMPLOYEE  
+    set empId = empId + 1000    
+    
+    SELECT "** debug star" -- to show how many iteration will occur
+    SELECT max(empId) from EMPLOYEE
+  END
+
+```
+
+--- 
+### **Error Handling**
+
+Try catch errors in sql server
+``` sql server
+BEGIN TRY
+  SELECT 10/0 AS Result;
+END TRY
+BEGIN CATCH
+  SELECT ERROR_MESSAGE() AS [Error Message]
+   ,ERROR_LINE() AS ErrorLine
+   ,ERROR_NUMBER() AS [Error Number]
+END CATCH
+```

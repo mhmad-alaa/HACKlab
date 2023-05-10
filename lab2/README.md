@@ -78,3 +78,38 @@ select [global_variable] as [value]
 --- 
 ## **Loops and conditional statements**
 
+How if-else statement works in sql server!
+``` sql server
+    if (condition)
+        -- do work
+    else if (condition)
+        -- do work
+    else 
+        -- do work
+```
+
+How while loop work in sql server!
+``` sql server
+    while (condition)
+        BEGIN
+            -- do work
+        END
+```
+:warning:
+``` sql 
+BEGIN, END 
+just a scope statments which specifiy the scode you are working in.
+```
+
+--- 
+## **Error Handling**
+
+Errors can be handled in sql server using TRY, CATCH in this way
+``` sql server
+BEGIN TRY
+ { sql_statement | statement_block }
+END TRY
+BEGIN CATCH
+ [ { sql_statement | statement_block } ]
+END CATCH 
+```
