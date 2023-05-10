@@ -30,7 +30,7 @@ It's shown that we use **set** and **select** to assign values to variables, wha
 <img src="/docs/set_select.png" width="500">
 </div>
 <div align="center">
-<img src="/docs/set_select_2.png" width="500">
+<img src="/docs/set_select_2.png" width="700">
 </div>
 
 Note
