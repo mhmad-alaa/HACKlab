@@ -68,5 +68,4 @@ There are differneces between procedures in many things like
 |:--------|:-----------:|
 | Only Integer Datatype | Any Datatype|
 | Only one value returned | More than one value returned|
-| Use to convy sucess to failure| Use to return values like id, name, count
-
+| Use to convy sucess to failure| Use to return values like id, name, count|
