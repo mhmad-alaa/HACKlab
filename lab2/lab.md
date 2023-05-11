@@ -1,4 +1,4 @@
-[Execution Link in online sql server editor](https://onecompiler.com/sqlserver/3z86qdd72)
+[Execution Link in online sql server compiler](https://onecompiler.com/sqlserver/3z86qdd72)
 
 ---
 Create database and insert values

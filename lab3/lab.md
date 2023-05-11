@@ -1,4 +1,4 @@
-[Execution Link in online sql server editor](https://onecompiler.com/sqlserver/3z88wsjdh)
+[Execution Link in online sql server compiler](https://onecompiler.com/sqlserver/3z88wsjdh)
 
 --- 
 
