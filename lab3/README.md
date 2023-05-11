@@ -40,7 +40,7 @@ end
 ```
 
 ### How to drop the procedure from database!
-``` sql server
+``` sql
 DROP PROCEDURE procedure_name;
 ```
 
@@ -53,6 +53,20 @@ There are differneces between procedures in many things like
     - you can specifiy a values as the default or not
 
 - Optional Parameter – NULL Parameter
-    - 
-
+    - if you don't pass the value it set the default,
+        the default may be null
+- Output Parameter
+    - it's the returned value from the procedure
+    - it defined in the procedure parameters with <output>
+        and with Execute code wiht <output> to 
+- Return Values
+    - it's mostly like the Output Parameter, 
+        but they differ in some criterias witll shown.
 ```
+
+|**Return Value** | **Output Parameters** |
+|:--------|:-----------:|
+| Only Integer Datatype | Any Datatype|
+| Only one value returned | More than one value returned|
+| Use to convy sucess to failure| Use to return values like id, name, count
+
