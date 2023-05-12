@@ -1,4 +1,4 @@
-[Execution Link in online sql server compiler]()
+[Execution Link in online sql server compiler](https://onecompiler.com/sqlserver/3z8d6rm8s)
 
 --- 
 
@@ -45,7 +45,7 @@ create trigger tr_emp_forDelete
 -- and done "AFTER" some operation done as "delete" or "insert" 
 ```
 
-Insert like (log record) to [EmployeeAudit] table  after inserting data to the EMPLOYEE
+Insert like (log record) to EmployeeAudit table  after inserting data to the EMPLOYEE table
 
 ```sql 
 create trigger tr_emp_forInsert
@@ -63,3 +63,25 @@ create trigger tr_emp_forInsert
 --- 
 
 ### Instead of Triggers
+
+Trigger that prevent deletion from table EMPLOYEE
+``` sql 
+create trigger tr_emp_InsteadUpdate
+  on EMPLOYEE
+  instead of delete
+  as
+  begin
+    select 'deletion not allowed!'
+  end
+```
+
+Trigger that prevent you to delete, insert and update from table EMPLOYEE
+``` sql 
+create trigger tr_emp_Instead
+  on catalog
+  instead of delete, update, insert
+  as
+  begin
+    select 'deletion, insertion or update Not Allowed'
+  end
+```
