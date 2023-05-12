@@ -29,3 +29,39 @@ These triggers run after an **insert**, **update** or **delete** on a table.\
 - **AFTER** UPDATE Trigger
 - **AFTER** DELETE Trigger
 
+--- 
+### Instead of Triggers
+These can be used as an interceptor for anything that anyone tried to do on our table or view.\
+If you define an Instead of trigger on a table for the
+Delete operation, they try to delete rows, and they will not actually get deleted.
+
+Unscientifically, it fake your sql query operations, 
+it doesn't do what it suppose to do, so "instead of" the acctual operation it did another one.
+
+#### INSTEAD OF TRIGGERS can be classified further into three types as:
+- **INSTEAD OF** INSERT Trigger
+- **INSTEAD OF** UPDATE Trigger
+- **INSTEAD OF** DELETE Trigger
+--- 
+
+There are many other triggers like 
+- Disabling trigger
+    - used to disable a trigger temporarily in case of trubleshooting or data recovery
+    ``` sql 
+        DISABLE TRIGGER [trigger_name]
+        ON [object_name | DATABASE | ALL SERVER]
+    ```
+- Enabling trigger
+    - to enable a trigger so that the trigger can be fired whenever an event occurs
+    ``` sql 
+        ENABLE TRIGGER [trigger_name]
+        ON [object_name | DATABASE | ALL SERVER]
+    ```
+- List all triggers
+    ``` sql 
+        SELECT
+        *
+        FROM
+        sys.triggers
+    ```
+    
