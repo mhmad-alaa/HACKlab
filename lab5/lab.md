@@ -120,12 +120,3 @@ AS
 -- that call the function and display all values in returned table-variable
 SELECT * from getCopyOfEMPLOYEE() 
 ```
-
-
-
-
-
-
-
-
-
